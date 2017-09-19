@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import com.jfoenix.validation.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSecond">
+   <children>
+      <AnchorPane>
+         <children>
+            <ImageView fx:id="btnimage" onMouseClicked="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Background.jpg" />
+               </image>
+            </ImageView>
+            <Pane fx:id="canvas" onMouseClicked="#handleButtonAction" prefHeight="600.0" prefWidth="960.0" />
+         </children>
+      </AnchorPane>
+      <VBox alignment="TOP_CENTER" layoutX="960.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" spacing="40.0">
+         <children>
+            <HBox alignment="TOP_RIGHT">
+               <children>
+                  <ImageView fx:id="btnback" fitHeight="43.0" fitWidth="32.0" onMouseClicked="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Exit.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="btnquit" onMouseClicked="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Quit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" spacing="10.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <JFXToggleButton text="Show Grid" toggleColor="#f46161" unToggleColor="LIGHTGREEN" />
+                        <JFXToggleButton layoutX="10.0" layoutY="10.0" text="Show Hexagons" toggleColor="#f46161" unToggleColor="LIGHTGREEN" />
+                     </children>
+                  </VBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hexagons Opacity" />
+                  <JFXSlider />
+               </children>
+            </VBox>
+            <Button mnemonicParsing="false" style="-fx-background-color: lightgreen; -fx-background-radius: 5mm; -fx-border-radius: 5mm;" text="Select Party" />
+            <HBox alignment="TOP_CENTER" spacing="20.0">
+               <children>
+                  <Button fx:id="btnclear" layoutX="56.0" layoutY="147.0" mnemonicParsing="false" onAction="#handleButton" style="-fx-background-color: #f46161; -fx-background-radius: 5mm; -fx-border-radius: 5mm;" text="Clear" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" style="-fx-background-color: lightgreen; -fx-background-radius: 5mm; -fx-border-radius: 5mm;" text="Calculate" />
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</Pane>

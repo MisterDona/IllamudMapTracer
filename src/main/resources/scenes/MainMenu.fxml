@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="600.0" style="-fx-background-color: #6b6b6b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MainMenu">
+   <children>
+      <HBox alignment="CENTER" layoutY="44.0" prefHeight="79.0" prefWidth="600.0" spacing="80.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/CreatedMap.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnnewmap" layoutX="10.0" layoutY="25.0" onMouseClicked="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/NewMap.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="140.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Settings.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnsalir" layoutX="270.0" layoutY="25.0" onMouseClicked="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Exit.Png" />
+               </image>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Text layoutX="177.0" layoutY="38.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" text="Illamud Map Tracer" textAlignment="CENTER" wrappingWidth="246.369140625">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
