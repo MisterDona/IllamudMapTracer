@@ -9,7 +9,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="600.0" style="-fx-background-color: #6b6b6b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllers.MainMenu">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="600.0" style="-fx-background-color: #6b6b6b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainMenu">
    <children>
       <HBox alignment="CENTER" layoutY="44.0" prefHeight="79.0" prefWidth="600.0" spacing="80.0">
          <children>

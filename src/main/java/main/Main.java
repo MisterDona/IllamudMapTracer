@@ -19,9 +19,9 @@ public class Main extends Application {
     	SceneManager.getInstance().launch("main");
     }
 	public void loaddefaultscenes() throws IOException{
-		SceneManager.getInstance().create("main", "/resources/scenes/MainMenu.fxml");
-		SceneManager.getInstance().create("newmap", "/resources/scenes/View2.fxml");
-		SceneManager.getInstance().create("newmapconfig", "/resources/scenes/NewMapConfig.fxml");
+		SceneManager.getInstance().create("main", "/scenes/MainMenu.fxml");
+		SceneManager.getInstance().create("newmap", "/scenes/View2.fxml");
+		SceneManager.getInstance().create("newmapconfig", "/scenes/NewMapConfig.fxml");
 	}
     
    

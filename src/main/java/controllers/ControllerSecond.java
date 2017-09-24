@@ -52,7 +52,6 @@ public class ControllerSecond implements Initializable {
 			canvas.getChildren().clear();
 		}
     }
-	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		subcanvas.getChildren().add(new ImageView(NewMapConfig.path));
 		canvas.setOpacity(0.5);

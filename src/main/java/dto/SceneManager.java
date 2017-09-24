@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -45,8 +46,8 @@ public class SceneManager {
 	}
 	
 	public void load (String nameID) throws IOException {
-		scenes.put(nameID,new Scene(FXMLLoader.load(getClass().getResource(ids.get(nameID)))));
-		launch(nameID);
+		scenes.put(nameID,new Scene((Parent) FXMLLoader.load(getClass().getResource(ids.get(nameID)))));
+		launch(scenes.get(nameID));
 	}
 
 }
