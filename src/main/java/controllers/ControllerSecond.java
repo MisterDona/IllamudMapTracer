@@ -27,6 +27,8 @@ public class ControllerSecond implements Initializable {
     private Pane canvas;
     @FXML
     private Pane subcanvas;
+    @FXML
+    private Pane principal;
     
     private Grilla grilla;
 	

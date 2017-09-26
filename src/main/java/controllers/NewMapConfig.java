@@ -39,6 +39,7 @@ public class NewMapConfig  implements Initializable{
     		imgFile = chooser.showOpenDialog(null);
     		path=""+ imgFile.toURI();
     		path= path.replaceAll("file:/", "file:///");
+    		filetext.setText(path);
 		    }
     	if (event.getTarget()==nextbtn)
     		SceneManager.getInstance().launch("newmap");

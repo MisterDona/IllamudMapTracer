@@ -10,15 +10,15 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerSecond">
+<Pane fx:id="principal" nodeOrientation="RIGHT_TO_LEFT" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerSecond">
    <children>
       <AnchorPane>
          <children>
-            <Pane fx:id="subcanvas" prefHeight="112.0" prefWidth="156.0" />
-            <Pane fx:id="canvas" onMouseClicked="#handleButtonAction" prefHeight="600.0" prefWidth="960.0" />
+            <Pane fx:id="subcanvas" nodeOrientation="LEFT_TO_RIGHT" />
+            <Pane fx:id="canvas" onMouseClicked="#handleButtonAction" prefHeight="0.0" prefWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
          </children>
       </AnchorPane>
-      <VBox alignment="TOP_CENTER" layoutX="960.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" spacing="40.0">
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="0.0" prefWidth="0.0" spacing="40.0" visible="false">
          <children>
             <HBox alignment="TOP_RIGHT">
                <children>
