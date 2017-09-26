@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
-</AnchorPane>
 
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="330.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewMapConfig">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-2.0" layoutY="-4.0" prefHeight="409.0" prefWidth="330.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create Map" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <JFXTextField fx:id="filetext" prefHeight="25.0" prefWidth="231.0" promptText="Select File..." />
+                  <JFXButton fx:id="openbtn" onAction="#handleButtonAction" style="-fx-background-color: lightgreen;" text="Open..." />
+               </children>
+            </HBox>
+            <JFXButton fx:id="nextbtn" onAction="#handleButtonAction" style="-fx-background-color: lightgreen;" text="Next" />
+         </children>
+      </VBox>
+   </children>
+</Pane>

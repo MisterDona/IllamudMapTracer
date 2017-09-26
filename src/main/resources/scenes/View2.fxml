@@ -10,15 +10,11 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSecond">
+<Pane style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ControllerSecond">
    <children>
       <AnchorPane>
          <children>
-            <ImageView fx:id="btnimage" onMouseClicked="#handleButtonAction" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/Background.jpg" />
-               </image>
-            </ImageView>
+            <Pane fx:id="subcanvas" prefHeight="112.0" prefWidth="156.0" />
             <Pane fx:id="canvas" onMouseClicked="#handleButtonAction" prefHeight="600.0" prefWidth="960.0" />
          </children>
       </AnchorPane>

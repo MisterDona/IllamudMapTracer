@@ -53,6 +53,7 @@ public class ControllerSecond implements Initializable {
 		}
     }
 	public void initialize(URL location, ResourceBundle resources) {
+		if (NewMapConfig.path != null)
 		subcanvas.getChildren().add(new ImageView(NewMapConfig.path));
 		canvas.setOpacity(0.5);
 		grilla= new Grilla(20);

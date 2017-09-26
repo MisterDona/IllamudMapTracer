@@ -33,7 +33,7 @@ public class SceneManager {
 		window.setScene(data);
 		window.centerOnScreen();
 		window.show();
-	}
+		}
 	
 	public void launch(String nameID) throws IOException{
 		if (scenes.containsKey(nameID))
